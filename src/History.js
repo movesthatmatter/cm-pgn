@@ -90,25 +90,25 @@ export class History {
         move.fen = chess.fen()
         move.uci = move.from + move.to + (move.promotion ? move.promotion : "")
         move.variations = []
-        if (chess.game_over()) {
+        if (chess.isGameOver()) {
             move.gameOver = true
-            if (chess.in_draw()) {
+            if (chess.isDraw()) {
                 move.inDraw = true
             }
-            if (chess.in_stalemate()) {
+            if (chess.isStalemate()) {
                 move.inStalemate = true
             }
-            if (chess.insufficient_material()) {
+            if (chess.isInsufficientMaterial()) {
                 move.insufficientMaterial = true
             }
-            if (chess.in_threefold_repetition()) {
+            if (chess.isThreefoldRepetition()) {
                 move.inThreefoldRepetition = true
             }
-            if (chess.in_checkmate()) {
+            if (chess.isCheckmate()) {
                 move.inCheckmate = true
             }
         }
-        if (chess.in_check()) {
+        if (chess.inCheck()) {
             move.inCheck = true
         }
     }

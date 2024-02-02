@@ -28,7 +28,7 @@
     "pegjs": "^0.10.0",
     "teevi": "^2.2.4"
   },
-  "dependencies": {
-    "chess.mjs": "^1.4.0"
+  "peerDependencies": {
+    "chess.js": "^1.0.0-beta.7"
   }
 }

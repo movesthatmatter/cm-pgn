@@ -1,8 +1,8 @@
 {
   "name": "cm-pgn",
-  "version": "3.4.0-0",
+  "version": "3.4.0-1",
   "description": "Module for parsing and rendering of PGNs (Portable Game Notation)",
-  "main": "src/cm-pgn/Pgn.js",
+  "main": "src/Pgn.js",
   "scripts": {
     "test": "echo 'request test/index.html for testing'"
   },

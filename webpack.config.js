@@ -7,6 +7,7 @@ module.exports = {
     filename: "index_bundle.js",
     library: "$",
     libraryTarget: "umd",
+    globalObject: 'this',
   },
   module: {
     rules: [
